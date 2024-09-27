@@ -5,3 +5,6 @@ uvicorn
 fastapi
 python-dotenv
 bs4
+openai
+numpy
+pandas

@@ -2,7 +2,7 @@
 
 1. リモートリポジトリから最新の変更を取得する
    ```bash
-   git pull
+   git pull  or clone
    ```
 
 2. Dockerコンテナを起動する
