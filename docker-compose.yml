@@ -12,7 +12,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./docker/mysql:/var/lib/mysql
+      - mysql:/var/lib/mysql
 
   moon-php:
     build:
@@ -52,4 +52,5 @@ services:
     depends_on:
       - moon-db
 
-
+volumes:
+  mysql:
