@@ -51,6 +51,8 @@ services:
     working_dir: /var/www/src/python
     ports:
       - "5000:5000"
+    environment:
+      - PYTHONPATH=/var/www/src/python:/var/www/src/python/Class:$PYTHONPATH  # Include Class in PYTHONPATH
     depends_on:
       - moon-db
 
