@@ -52,7 +52,14 @@ services:
     ports:
       - "5000:5000"
     environment:
-      - PYTHONPATH=/var/www/src/python:/var/www/src/python/Class:/var/www/src/python/Tests:/var/www/src/python/Util:$PYTHONPATH
+      - PYTHONPATH=/var/www/src/python:
+                   /var/www/src/python/Class:
+                   /var/www/src/python/Tests:
+                   /var/www/src/python/Util:
+                   /var/www/src/python/DataTransferObject:
+                   /var/www/src/python/Repository:
+                   /var/www/src/python/Service:
+                   $PYTHONPATH
     depends_on:
       - moon-db
 
