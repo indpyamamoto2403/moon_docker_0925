@@ -59,7 +59,7 @@ services:
                    /var/www/src/python/DataTransferObject:
                    /var/www/src/python/Repository:
                    /var/www/src/python/Service:
-                   $PYTHONPATH
+                   $PYTHONPATH:
     depends_on:
       - moon-db
 
