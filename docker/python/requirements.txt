@@ -1,5 +1,6 @@
 mysql-connector-python
 sqlalchemy
+pytest
 requests
 uvicorn
 gunicorn
