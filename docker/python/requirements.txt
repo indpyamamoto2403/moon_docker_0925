@@ -2,9 +2,11 @@ mysql-connector-python
 sqlalchemy
 requests
 uvicorn
+gunicorn
 fastapi
 python-dotenv
 bs4
 openai
 numpy
-pytest
+pandas
+langchain
