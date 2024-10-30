@@ -21,6 +21,7 @@ services:
     container_name: php_service
     volumes:
       - ./src/php:/var/www/src/php
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     ports:
       - "8000:8000"
     depends_on:
